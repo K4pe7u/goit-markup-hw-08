@@ -1,0 +1,123 @@
+.portfolio {
+  &__wrapper {
+    gap: 50px;
+  }
+  &__buttons-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 8px;
+
+    & [type='button'] {
+      background-color: $lightcream;
+      border: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.62;
+      letter-spacing: 0.03em;
+      color: $darkness;
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 6px 22px;
+
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: $lightblue;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+          0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+  }
+  &__buttons-item:hover,
+  &__buttons-item:focus {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: cursor, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.portfolio-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__list {
+    display: flex;
+  }
+  &__item:hover,
+  &__item:focus {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: cursor, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__roll-box {
+    width: 370px;
+    height: 294px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__roll-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+    background-color: rgba(33, 150, 243, 0.9);
+  }
+  &__item:hover &__roll-text {
+    transform: translateY(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__roll-text > &__text {
+    color: $white;
+    text-align: left;
+    padding: 49px 45px 49px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
+  &__tale {
+    width: 370px;
+    height: 110px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+
+    &--title:nth-child(odd) {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+    }
+    &--title:nth-child(even) {
+      color: var(--color3);
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.03em;
+    }
+  }
+  &__first-row {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__second-row {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__third-row {
+    display: flex;
+    gap: 30px;
+  }
+}

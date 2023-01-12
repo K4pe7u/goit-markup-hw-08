@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+svg {
+  vertical-align: middle;
+}
+main {
+  margin: 0 auto;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding: 94px 0;
+}
