@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio zadanie 3 GoIT</title>
+    <title>Portfolio zadanie 8 GoIT</title>
     <!--font czcionka-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,6 +30,15 @@
             ><span class="logo__web">Web</span
             ><span class="logo__web logo__web--black">Studio</span></a
           >
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="24" class="menu-toggle__icon">
+              <use href="images/icons.svg#icon-menu-mobile"></use>
+            </svg>
+          </button>
 
           <ul class="header__nav-list">
             <li>
@@ -106,7 +115,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/technocrack.jpg"
+                  src="images/portfolio-images/technocrack-desk@1.jpg"
                   alt="strona internetowa ekranie laptopa"
                   width="370"
                   height="294"
@@ -132,7 +141,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/new-graphics.jpg"
+                  src="images/portfolio-images/new-graphics-desk@1.jpg"
                   alt="dwóch zawodników koszykówki"
                   width="370"
                   height="294"
@@ -154,7 +163,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/seafood-restaurant.jpg"
+                  src="images/portfolio-images/seafood-restaurant-desk@1.jpg"
                   alt="logo z rybą"
                   width="370"
                   height="294"
@@ -178,7 +187,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/project-prime.jpg"
+                  src="images/portfolio-images/project-prime-desk@1.jpg"
                   alt="czarne słuchawki"
                   width="370"
                   height="294"
@@ -200,7 +209,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/project-boxes.jpg"
+                  src="images/portfolio-images/project-boxes-desk@1.jpg"
                   alt="podpisane pudełka"
                   width="370"
                   height="294"
@@ -222,7 +231,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/boards.jpg"
+                  src="images/portfolio-images/boards-desk@1.jpg"
                   alt="ekran monitora z aplikacją"
                   width="370"
                   height="294"
@@ -246,7 +255,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/magazines.jpg"
+                  src="images/portfolio-images/magazines-desk@1.jpg"
                   alt="magazyn otwarty na losowej stronie"
                   width="370"
                   height="294"
@@ -268,7 +277,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/lab.jpg"
+                  src="images/portfolio-images/lab-desk@1.jpg"
                   alt="etykieta lab"
                   width="370"
                   height="294"
@@ -290,7 +299,7 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/portfolio-images/business.jpg"
+                  src="images/portfolio-images/business-desk@1.jpg"
                   alt="osoba pracująca na laptopie"
                   width="370"
                   height="294"
@@ -384,5 +393,68 @@
         </form>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="24" class="menu-toggle__icon">
+          <use href="images/icons.svg#icon-menu-mobile"></use>
+        </svg>
+      </button>
+      <div class="menu-container__modal">
+        <ul class="menu-container__nav">
+          <li><a href="index.html" class="menu-container__link">Agencja</a></li>
+          <li>
+            <a href="portfolio.html" class="menu-container__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="tutorial.html" class="menu-container__link">Tutorial</a>
+          </li>
+        </ul>
+        <div class="menu-container__contacts">
+          <a
+            href="tel:+48111111111"
+            class="menu-container__link menu-container__link--lightblue"
+          >
+            +48 111 111 111
+          </a>
+          <a
+            href="mailto:info@devstudio.com"
+            class="menu-container__link menu-container__link--grey"
+          >
+            info@devstudio.com
+          </a>
+          <ul class="menu-container__socialmedia">
+            <li>
+              <a
+                class="menu-container__link menu-container__link--social"
+                href="#"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-container__link menu-container__link--social"
+                href="#"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-container__link menu-container__link--social"
+                href="#"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-container__link menu-container__link--social"
+                href="#"
+                >Linkedln</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

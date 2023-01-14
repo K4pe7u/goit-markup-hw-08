@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>7 zadanie domowe GoIT</title>
+    <title>8 zadanie domowe GoIT</title>
     <!--font czcionka-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,8 +31,12 @@
             ><span class="logo__web">Web</span
             ><span class="logo__web logo__web--black">Studio</span></a
           >
-          <button class="menu__mobile js-open-menu">
-            <svg width="24" height="16" class="menu__button">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="24" class="menu-toggle__icon">
               <use href="images/icons.svg#icon-menu-mobile"></use>
             </svg>
           </button>
@@ -153,7 +157,7 @@
           <ul class="specialisations__list">
             <li class="specialisations__item">
               <img
-                src="images/deal-images/writing-computer.jpg"
+                src="images/deal-images/writing-computer-desk@1.jpg"
                 alt="osoba pracująca na laptopie"
                 width="370"
                 height="294"
@@ -164,7 +168,7 @@
             </li>
             <li class="specialisations__item">
               <img
-                src="images/deal-images/phone-computer.jpg"
+                src="images/deal-images/phone-computer-desk@1.jpg"
                 alt="osoba pracująca na laptopie trzyma w dłoni telefon"
                 width="370"
                 height="294"
@@ -173,7 +177,7 @@
             </li>
             <li class="specialisations__item">
               <img
-                src="images/deal-images/clicking-tablet.jpg"
+                src="images/deal-images/clicking-tablet-desk@1.jpg"
                 alt="osoba pracująca na tablecie"
                 width="370"
                 height="294"
@@ -194,7 +198,7 @@
           <ul class="team__list">
             <li class="team__item">
               <img
-                src="images/team-images/jason-spec.jpg"
+                src="images/team-images/jason-spec-desk@1.jpg"
                 alt="Uśmiechnięty mężczyzna z brodą w okularach"
                 width="270"
                 height="260"
@@ -236,7 +240,7 @@
             </li>
             <li class="team__item">
               <img
-                src="images/team-images/susan-over.jpg"
+                src="images/team-images/susan-over-desk@1.jpg"
                 alt="Kobieta w blond włosach w okularach"
                 width="270"
                 height="260"
@@ -278,7 +282,7 @@
             </li>
             <li class="team__item">
               <img
-                src="images/team-images/stephan-carrot.jpg"
+                src="images/team-images/stephan-carrot-desk@1.jpg"
                 alt="Młody uśmiechnięty brunet"
                 width="270"
                 height="260"
@@ -320,7 +324,7 @@
             </li>
             <li class="team__item">
               <img
-                src="images/team-images/joe-doe.jpg"
+                src="images/team-images/joe-doe-desk@1.jpg"
                 alt="Brunet w okularach z zarostem"
                 width="270"
                 height="260"
@@ -452,6 +456,7 @@
             </div>
           </div>
         </div>
+
         <form class="footer__form">
           <label class="footer__label" for="user_email"
             >Zapisz się do newslettera
@@ -573,6 +578,68 @@
           </div>
           <button class="submit-button" type="submit">Wyślij</button>
         </form>
+      </div>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="16px" height="16px">
+          <use href="images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="menu-container__modal">
+        <ul class="menu-container__nav">
+          <li><a href="index.html" class="menu-container__link">Agencja</a></li>
+          <li>
+            <a href="portfolio.html" class="menu-container__link">Portfolio</a>
+          </li>
+          <li>
+            <a href="tutorial.html" class="menu-container__link">Kontakt</a>
+          </li>
+        </ul>
+        <div class="menu-container__contact">
+          <a
+            href="tel:+48111111111"
+            class="menu-container__contact-link menu-container__contact-link--lightblue"
+          >
+            +48 111 111 111
+          </a>
+          <a
+            href="mailto:info@devstudio.com"
+            class="menu-container__contact-link menu-container__contact-link--grey"
+          >
+            info@devstudio.com
+          </a>
+          <ul class="menu-container__social">
+            <li>
+              <a
+                class="menu-container__social-link"
+                href="https://www.instagram.com"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-container__social-link"
+                href="https://www.twitter.com"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-container__social-link"
+                href="https://www.facebook.com"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu-container__social-link--border-none"
+                href="https://www.linkedin.com"
+                >Linkedln</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <script defer src="./js/mobile-menu.js"></script>
