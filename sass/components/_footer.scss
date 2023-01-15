@@ -7,12 +7,6 @@
     padding-left: 15px;
     padding-bottom: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include desktop {
-      display: flex;
-    }
   }
   &__contacts {
     font-style: normal;
@@ -23,18 +17,13 @@
     gap: 9px;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   &__address {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
     padding-top: 20px;
     font-style: normal;
-
-    @include desktop {
-      align-items: flex-start;
-    }
   }
   &__link {
     color: $darkgrey;
@@ -48,7 +37,6 @@
   &__social {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   &__social-title {
     font-weight: 700;
@@ -64,10 +52,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-
-    @include tablet {
-      display: flex;
-    }
   }
   &__social-item > &__social-box {
     display: flex;
@@ -91,7 +75,6 @@
   &__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   &__label {
     font-weight: 700;
@@ -104,12 +87,11 @@
   }
   &__label-box {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+
     gap: 12px;
   }
   &__input {
-    width: 450px;
+    width: 358px;
     height: 50px;
     background-color: $lightblack;
     border: 1px solid rgba(255, 255, 255, 0.3);

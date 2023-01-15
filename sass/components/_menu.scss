@@ -96,10 +96,6 @@
   top: 22px;
   right: 24px;
 
-  @include tablet {
-    display: none;
-  }
-
   &__icon:hover,
   &__focus:hover {
     fill: $lightblue;
