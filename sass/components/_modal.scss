@@ -1,0 +1,195 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%) scale(1);
+  visibility: visible;
+  transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.modal-close {
+  display: flex;
+  vertical-align: middle;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.form-title {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--color7);
+  margin-top: 40px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.form {
+  margin-bottom: 20px;
+
+  &__elements {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+      padding-bottom: 10px;
+    }
+    &:focus-within {
+      fill: $lightblue;
+    }
+    & ::placeholder {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+  }
+  &__elements > &__item {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin: 0 40px;
+    color: $darkgrey;
+  }
+  &__elements > &__item-input {
+    padding: 11px 0 11px 41px;
+  }
+  &__textarea {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin: 0 40px;
+
+    &:focus-within {
+      outline: none;
+      border-color: $lightblue;
+    }
+  }
+  &__elements > &__textarea {
+    padding: 12px 16px;
+    resize: none;
+  }
+  &__elements > &__item-input,
+  &__elements > &__item-textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin: 0 40px;
+  }
+  &__item-icon {
+    position: absolute;
+    display: flex;
+    top: 29px;
+    left: 52px;
+  }
+  &__item-input {
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus-within {
+      outline: none;
+      border-color: $lightblue;
+    }
+  }
+}
+.checkbox {
+  padding-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    display: flex;
+    gap: 7px;
+    cursor: pointer;
+  }
+  &__declaration {
+    color: $darkgrey;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+  &__declaration-link {
+    color: $lightblue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  &__label-input {
+    display: none;
+    pointer-events: none;
+  }
+  &__custom {
+    border: 1px solid $black;
+    border-radius: 2px;
+    position: relative;
+    width: 16px;
+    height: 15px;
+  }
+  &__custom-icon {
+    border-radius: 2px;
+    fill: $white;
+    background-color: $lightblue;
+    position: absolute;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: -1px;
+    left: -1px;
+    opacity: 0;
+  }
+  &__label-input:checked + &__custom > &__custom-icon {
+    opacity: 1;
+  }
+}
+.submit-button {
+  color: $white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background: $lightblue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  padding: 10px 76px;
+  margin: 0 164px;
+}
