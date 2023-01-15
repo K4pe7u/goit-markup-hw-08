@@ -5,17 +5,30 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    @include desktop {
+      justify-content: space-between;
+    }
   }
   &__nav {
     display: flex;
   }
   &__nav-list {
-    display: flex;
-    align-items: center;
-    margin-left: 93px;
+    margin-left: 83px;
+    margin-right: 71px;
     gap: 46px;
     padding-left: 0px;
+    display: none;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+
+    @include desktop {
+      display: flex;
+      align-items: center;
+    }
   }
   &__nav-item {
     color: $darkness;
@@ -64,7 +77,20 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: none;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
   }
+
   &__contacts-item {
     margin-left: 30px;
     color: $darkgrey;

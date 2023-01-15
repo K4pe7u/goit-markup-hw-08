@@ -1,8 +1,26 @@
 .main-question {
-  background: linear-gradient(#2f303a66, #2f303a66),
-    url(../images/background-images/background-desk@1.jpg);
+  background: linear-gradient(#2f303a66, #2f303a66);
+  background: url(../images/background-images/background-mobile@1.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  @include desktop {
+    background: url(../images/background-images/background-desk@1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  @include tablet {
+    background: url(../images/background-images/background-tab@1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
 
   &__wrapper {
     display: flex;
@@ -15,13 +33,19 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $white;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    margin-left: 252px;
-    margin-right: 252px;
-    margin-top: 106px;
+
+    @include desktop {
+      margin-left: 252px;
+      margin-right: 252px;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      margin-top: 106px;
+    }
+
+    @include tablet {
+    }
   }
   &__button {
     background: $lightblue;

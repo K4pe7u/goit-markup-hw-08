@@ -93,12 +93,19 @@
   border-radius: 50%;
   outline: none;
   position: absolute;
-  top: 22px;
+  top: 30px;
   right: 24px;
 
   &__icon:hover,
   &__focus:hover {
     fill: $lightblue;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @include desktop {
+    visibility: hidden;
+  }
+  @include tablet {
+    visibility: hidden;
   }
 }
