@@ -1,9 +1,7 @@
 .descriptions {
   &__list {
-    display: flex;
-    justify-content: center;
+    display: block;
     gap: 30px;
-    padding-left: 0px;
   }
   &__title {
     font-weight: 700;
@@ -11,6 +9,7 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
   }
   &__text {
     color: $darkgrey;
@@ -18,13 +17,35 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding-top: 10px;
+    padding-bottom: 30px;
   }
   &__item {
     background-color: $lightcream;
     border-radius: 4px;
     margin-bottom: 30px;
+    padding: 25px 190px;
   }
-  &__item-icon {
-    margin: 25px 102px 25px 102px;
+}
+
+@media screen and (min-width: 1200px) {
+  .descriptions {
+    &__list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-left: 0px;
+    }
+    &__title {
+      text-align: start;
+    }
+    &__item-icon {
+      margin: 25px 102px 25px 102px;
+    }
+    &__text {
+      padding-bottom: 0;
+    }
+    &__item {
+      padding: 0;
+    }
   }
 }

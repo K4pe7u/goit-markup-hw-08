@@ -7,6 +7,9 @@
     padding-left: 15px;
     padding-bottom: 20px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   &__contacts {
     font-style: normal;
@@ -15,10 +18,14 @@
     letter-spacing: 0.03em;
     color: $white;
     gap: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   &__address {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 20px;
     font-style: normal;
   }
@@ -39,6 +46,7 @@
     color: $white;
     text-transform: uppercase;
     margin: 12px 0 20px;
+    text-align: center;
   }
   &__social-media {
     fill: $white;
@@ -75,14 +83,17 @@
     letter-spacing: 0.03em;
     color: $white;
     text-transform: uppercase;
+    text-align: center;
     margin: 12px 0px 20px;
   }
   &__label-box {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 12px;
   }
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     background-color: $lightblack;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -102,6 +113,7 @@
   }
   &__button {
     width: 200px;
+    height: 50px;
     background: $lightblue;
     background: $lightblue;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -122,5 +134,32 @@
 
   &__button-icon {
     fill: $white;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &__social-title {
+      text-align: start;
+    }
+    &__label-box {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    &__label {
+      text-align: start;
+    }
+    &__contacts {
+    }
+    &__input {
+      width: 354px;
+    }
+    &__address {
+      display: block;
+    }
   }
 }

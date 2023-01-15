@@ -7,11 +7,14 @@
   &__list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   &__item {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 170px;
     height: 92px;
     border: 1px solid $lightgrey;
@@ -30,5 +33,12 @@
   &__item:focus > &__item-icon {
     fill: $lightblue;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__list {
+      flex-wrap: nowrap;
+    }
   }
 }
