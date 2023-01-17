@@ -1,6 +1,7 @@
 .descriptions {
   &__list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   &__title {
@@ -20,17 +21,19 @@
     padding-bottom: 30px;
   }
   &__item {
+    display: flex;
+    justify-content: center;
     background-color: $lightcream;
     border-radius: 4px;
     margin-bottom: 30px;
-    padding: 25px 190px;
+    padding: 25px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .descriptions {
     &__list {
-      display: flex;
+      flex-wrap: nowrap;
       justify-content: center;
       gap: 30px;
       padding-left: 0px;
@@ -38,14 +41,20 @@
     &__title {
       text-align: start;
     }
-    &__item-icon {
-      margin: 25px 102px 25px 102px;
-    }
+
     &__text {
       padding-bottom: 0;
     }
     &__item {
-      padding: 0;
+      padding: 25px 104px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .descriptions {
+    &__title {
+      text-align: start;
     }
   }
 }
