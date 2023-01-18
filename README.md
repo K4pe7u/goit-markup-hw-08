@@ -1,4 +1,4 @@
-# goit-markup-hw-07
-HomeWork nr 7
-BEM SASS SCSS
+# goit-markup-hw-08
+HomeWork nr 8
+Responsive
 
