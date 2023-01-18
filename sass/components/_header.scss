@@ -82,31 +82,32 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header {
     padding: 24px 0 25px;
+    &__wrapper {
+      justify-content: space-between;
+    }
     &__nav-list {
       display: flex;
       align-items: center;
-      margin-left: 93px;
+      justify-content: space-evenly;
       gap: 46px;
-      padding-left: 0px;
+      margin-left: 93px;
     }
-    &__wrapper {
-      display: flex;
 
-      justify-content: space-between;
+    &__contacts {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
-@media screen and (min-width: 768px) {
-  .header {
-    &__nav-list {
-      display: flex;
 
-      margin-left: 93px;
-      gap: 46px;
-      padding-left: 0px;
+@media screen and (min-width: 1200px) {
+  .header {
+    &__contacts {
+      flex-direction: row;
+      align-items: center;
     }
   }
 }
