@@ -29,6 +29,10 @@ svg {
   padding: 0 15px;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -39,8 +43,4 @@ svg {
   .container {
     max-width: 1200px;
   }
-}
-
-.section {
-  padding: 94px 0;
 }

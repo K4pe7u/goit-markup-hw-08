@@ -4,9 +4,11 @@
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
   }
   &__nav {
     display: flex;
+    justify-content: space-between;
   }
   &__nav-list {
     display: none;
@@ -86,6 +88,7 @@
   .header {
     padding: 24px 0 25px;
     &__wrapper {
+      flex-direction: row;
       justify-content: space-between;
     }
     &__nav-list {

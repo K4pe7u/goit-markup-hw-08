@@ -99,7 +99,8 @@
     gap: 12px;
   }
   &__input {
-    width: 450px;
+    display: block;
+    margin: 0 auto;
     height: 50px;
     background-color: $lightblack;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -118,7 +119,6 @@
     }
   }
   &__button {
-    width: 200px;
     height: 50px;
     background: $lightblue;
     background: $lightblue;
@@ -129,7 +129,8 @@
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    display: flex;
+    display: block;
+    padding: 0 44px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -142,6 +143,16 @@
     fill: $white;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    &__tab {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer {
     &__wrapper {
@@ -163,16 +174,10 @@
     &__input {
       width: 354px;
     }
-    &__address {
-      display: block;
+    &__contacts {
+      align-items: flex-start;
     }
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    &__tab {
-      display: flex;
-      flex-direction: row;
+    &__address {
       align-items: flex-start;
     }
   }

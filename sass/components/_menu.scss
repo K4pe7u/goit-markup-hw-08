@@ -1,12 +1,12 @@
 .menu-container {
-  max-width: 480px;
-  height: 100%;
-  width: 100%;
+  display: none;
   padding: 48px 40px;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   opacity: 0;
+  width: 100vw;
+  height: 100vh;
   transform: translateX(-100%);
   background: $white;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
@@ -81,7 +81,8 @@
 
   &.is-open {
     opacity: 1;
-    display: block;
+    display: flex;
+    flex-direction: column;
     transform: translateX(0);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -94,20 +95,27 @@
   border: none;
   border-radius: 50%;
   outline: none;
-  position: absolute;
-  top: 1.375rem;
-  right: 1.5rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &__icon:hover,
   &__focus:hover {
     fill: $lightblue;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__close {
+    color: $darkness;
+    background-color: $white;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    display: flex;
+    justify-content: end;
   }
 }
 @media screen and (min-width: 768px) {
   .menu-toggle {
     opacity: 0;
   }
-}
-@media screen and (min-width: 1200px) {
 }
