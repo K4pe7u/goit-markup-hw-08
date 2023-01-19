@@ -40,6 +40,9 @@
   .main-question {
     background: linear-gradient(#2f303a66, #2f303a66),
       url(../images/background-hero-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -47,6 +50,9 @@
   .main-question {
     background: linear-gradient(#2f303a66, #2f303a66),
       url(../images/background-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     &_title {
       font-size: 44px;
