@@ -12,22 +12,26 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: fit-content;
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+  }
   &__nav {
-    padding-bottom: 274px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-height: fit-content;
   }
 
   &__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
-    text-align: center;
     letter-spacing: 0.02em;
     color: $darkness;
-    margin-bottom: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 
     &:hover,
     &:focus {
@@ -35,17 +39,19 @@
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
   &__contact-link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
-    padding-bottom: 64px;
-    display: flex;
 
     &--lightblue {
       font-size: 34px;
       color: $lightblue;
-      padding-bottom: 32px;
     }
 
     &--grey {
@@ -53,6 +59,11 @@
       line-height: 1.16;
       color: $darkgrey;
     }
+  }
+  &__contact-network {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
   }
   &__social {
     display: flex;
