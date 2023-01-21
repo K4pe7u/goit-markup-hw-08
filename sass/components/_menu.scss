@@ -1,7 +1,6 @@
-.menu-container {
-  display: none;
-  padding: 48px 40px;
+.menu {
   position: fixed;
+  padding: 32px;
   top: 0;
   left: 0;
   opacity: 0;
@@ -12,18 +11,35 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  max-height: fit-content;
 
-  &__wrapper {
+  &__toggle {
+    color: $darkness;
+    background-color: $white;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
     display: flex;
-    flex-direction: column;
-    gap: 300px;
+    justify-content: flex-end;
   }
+  &__toggle-icon:hover,
+  &__toggle-icon:focus {
+    fill: $lightblue;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   &__nav {
     display: flex;
     flex-direction: column;
-    gap: 32px;
     max-height: fit-content;
+    gap: 32px;
+  }
+
+  &__modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
 
   &__link {
@@ -99,34 +115,8 @@
   }
 }
 
-.menu-toggle {
-  color: $darkness;
-  background-color: $white;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  &__icon:hover,
-  &__focus:hover {
-    fill: $lightblue;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__close {
-    color: $darkness;
-    background-color: $white;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-    display: flex;
-    justify-content: end;
-  }
-}
 @media screen and (min-width: 768px) {
-  .menu-toggle {
+  .menu__toggle {
     opacity: 0;
   }
 }
