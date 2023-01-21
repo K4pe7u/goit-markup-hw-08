@@ -8,7 +8,8 @@
   transition: transform, opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
-  max-width: 100%;
+  width: 100%;
+  max-width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -195,10 +196,16 @@
   display: block;
   margin: 0 auto;
 }
+@media screen and (-width: 768px) {
+  .modal {
+    max-width: 450px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {

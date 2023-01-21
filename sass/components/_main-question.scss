@@ -4,23 +4,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
   &__title {
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
     color: $white;
     font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    max-width: 480px;
+    max-width: 365px;
     margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 24px;
   }
   &__button {
     background: $lightblue;
@@ -35,6 +30,7 @@
     border: none;
     outline: none;
     padding: 10px 41px;
+    margin-bottom: 24px;
   }
 }
 
@@ -56,17 +52,14 @@
     background-position: center;
     background-size: cover;
 
-    &__wrapper {
-      height: 600px;
-      gap: 30px;
-      display: flex;
-      justify-content: center;
-    }
-
     &__title {
-      max-width: 692px;
       font-size: 44px;
       line-height: 1.36;
+      margin: 106px 254px 30px;
+      max-width: 100%;
+    }
+    &__button {
+      margin-bottom: 106px;
     }
   }
 }

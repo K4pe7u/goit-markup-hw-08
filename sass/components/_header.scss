@@ -65,7 +65,6 @@
     letter-spacing: 0.02em;
   }
   &__contacts-item {
-    margin-left: 30px;
     color: $darkgrey;
     &:hover,
     &:focus {
@@ -87,7 +86,8 @@
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 21px 0 21px;
+    padding: 20px 0;
+
     &__wrapper {
       flex-direction: row;
       justify-content: space-between;
@@ -95,23 +95,30 @@
     &__nav-list {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
-      gap: 46px;
-      margin-left: 93px;
+      gap: 60px;
+      margin-left: 83px;
     }
 
     &__contacts {
       display: flex;
       flex-direction: column;
+      justify-content: start;
+      gap: 10px;
+    }
+    &__contacts-item {
+      display: flex;
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header {
+    padding: 24px 0 25px;
+
     &__contacts {
       flex-direction: row;
       align-items: center;
+      gap: 30px;
     }
   }
 }
