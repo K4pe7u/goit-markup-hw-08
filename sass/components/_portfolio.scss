@@ -1,14 +1,11 @@
 .portfolio {
-  &__wrapper {
-    gap: 50px;
-  }
   &__buttons-list {
     display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 40px;
 
-    & [type='button'] {
+    [type='button'] {
       background-color: $lightcream;
       border: none;
       font-weight: 500;
@@ -18,7 +15,7 @@
       color: $darkness;
       cursor: pointer;
       border-radius: 4px;
-      padding: 6px 22px;
+      padding: 6px 28px;
 
       &:hover,
       &:focus {
@@ -30,8 +27,8 @@
       }
     }
   }
-  &__buttons-item:hover,
-  &__buttons-item:focus {
+  &__buttons-item &__:hover,
+  &__:focus {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -40,12 +37,10 @@
 }
 
 .portfolio-pages {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-
   &__list {
     display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
   }
   &__item:hover,
   &__item:focus {
@@ -55,8 +50,7 @@
     transition: cursor, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__roll-box {
-    width: 370px;
-    height: 294px;
+    width: 100%;
     position: relative;
     overflow: hidden;
   }
@@ -76,15 +70,14 @@
   &__roll-text > &__text {
     color: $white;
     text-align: left;
-    padding: 49px 45px 49px 24px;
+    padding: 100px 24px;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
     letter-spacing: 0.03em;
   }
   &__tale {
-    width: 370px;
-    height: 110px;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -92,32 +85,54 @@
     align-items: flex-start;
     padding: 20px 24px;
     border: 1px solid #eeeeee;
+  }
+  &__tale-title:nth-child(odd) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+  &__tale-title:nth-child(even) {
+    color: var(--color3);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+  }
+}
 
-    &--title:nth-child(odd) {
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 2;
-      letter-spacing: 0.06em;
+@media screen and (min-width: 768px) {
+  .portfolio {
+    &__buttons-list {
+      justify-content: center;
     }
-    &--title:nth-child(even) {
-      color: var(--color3);
-      font-size: 16px;
-      line-height: 1.88;
-      letter-spacing: 0.03em;
+  }
+  .portfolio-pages {
+    &__tale {
+      &--longer {
+        padding-bottom: 56px;
+      }
+    }
+    &__item {
+      width: 354px;
+    }
+    &__roll-text > &__text {
+      padding: 49px 24px;
     }
   }
-  &__first-row {
-    display: flex;
-    gap: 30px;
-  }
+}
 
-  &__second-row {
-    display: flex;
-    gap: 30px;
-  }
-
-  &__third-row {
-    display: flex;
-    gap: 30px;
+@media screen and (min-width: 1200px) {
+  .portfolio-pages {
+    &__item {
+      width: 370px;
+    }
+    &__tale {
+      &--longer {
+        padding-bottom: 20px;
+      }
+    }
+    &__roll-text > &__text {
+      padding: 49px 45px 49px 24px;
+    }
   }
 }

@@ -30,7 +30,15 @@
             ><span class="logo__web">Web</span
             ><span class="logo__web logo__web--black">Studio</span></a
           >
-
+          <button
+            class="menu__toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" class="menu__toggle-icon">
+              <use href="images/icons.svg#icon-menu-mobile"></use>
+            </svg>
+          </button>
           <ul class="header__nav-list">
             <li>
               <a
@@ -102,14 +110,21 @@
         </div>
         <!--Menu-->
         <div class="portfolio-pages">
-          <ul class="portfolio-pages__list portfolio-pages__first-row">
+          <ul class="portfolio-pages__list">
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/technocrack.jpg"
                   alt="strona internetowa ekranie laptopa"
-                  width="370"
-                  height="294"
+                  src="images/technocrack-desk@1.jpg"
+                  srcset="
+                    images/technocrack-desk@1.jpg   370w,
+                    images/technocrack-desk@2.jpg   740w,
+                    images/technocrack-tab@1.jpg    354w,
+                    images/technocrack-tab@2.jpg    708w,
+                    images/technocrack-mobile@1.jpg 450w,
+                    images/technocrack-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -120,11 +135,11 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-pages__tale">
-                <span class="portfolio-pages__tale--title"
+              <div class="portfolio-pages__tale portfolio-pages__tale--longer">
+                <span class="portfolio-pages__tale-title"
                   ><b>Technocrack</b></span
                 >
-                <span class="portfolio-pages__tale--title"
+                <span class="portfolio-pages__tale-title"
                   >Strona internetowa</span
                 >
               </div>
@@ -132,10 +147,17 @@
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/new-graphics.jpg"
                   alt="dwóch zawodników koszykówki"
-                  width="370"
-                  height="294"
+                  src="images/new-graphics-desk@1.jpg"
+                  srcset="
+                    images/new-graphics-desk@1.jpg   370w,
+                    images/new-graphics-desk@2.jpg   740w,
+                    images/new-graphics-tab@1.jpg    354w,
+                    images/new-graphics-tab@2.jpg    708w,
+                    images/new-graphics-mobile@1.jpg 450w,
+                    images/new-graphics-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -147,17 +169,26 @@
                 </div>
               </div>
               <div class="portfolio-pages__tale">
-                <span><b>Grafika New Orlean vs Golden Star</b></span>
-                <span>Dizajn</span>
+                <span class="portfolio-pages__tale-title"
+                  ><b>Grafika New Orlean vs Golden Star</b></span
+                >
+                <span class="portfolio-pages__tale-title">Dizajn</span>
               </div>
             </li>
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/seafood-restaurant.jpg"
                   alt="logo z rybą"
-                  width="370"
-                  height="294"
+                  src="images/seafood-restaurant-desk@1.jpg"
+                  srcset="
+                    images/seafood-restaurant-desk@1.jpg   370w,
+                    images/seafood-restaurant-desk@2.jpg   740w,
+                    images/seafood-restaurant-tab@1.jpg    354w,
+                    images/seafood-restaurant-tab@2.jpg    708w,
+                    images/seafood-restaurant-mobile@1.jpg 450w,
+                    images/seafood-restaurant-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -169,19 +200,26 @@
                 </div>
               </div>
               <div class="portfolio-pages__tale">
-                <span><b>Restauracja Seafood</b></span>
-                <span>Aplikacja</span>
+                <span class="portfolio-pages__tale-title"
+                  ><b>Restauracja Seafood</b></span
+                >
+                <span class="portfolio-pages__tale-title">Aplikacja</span>
               </div>
             </li>
-          </ul>
-          <ul class="portfolio-pages__list portfolio-pages__second-row">
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/project-prime.jpg"
                   alt="czarne słuchawki"
-                  width="370"
-                  height="294"
+                  src="images/project-prime-desk@1.jpg"
+                  srcset="
+                    images/project-prime-desk@1.jpg   370w,
+                    images/project-prime-desk@2.jpg   740w,
+                    images/project-prime-tab@1.jpg    354w,
+                    images/project-prime-tab@2.jpg    708w,
+                    images/project-prime-mobile@1.jpg 450w,
+                    images/project-prime-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -193,17 +231,26 @@
                 </div>
               </div>
               <div class="portfolio-pages__tale">
-                <span><b>Projekt Prime</b></span>
-                <span>Marketing</span>
+                <span class="portfolio-pages__tale-title"
+                  ><b>Projekt Prime</b></span
+                >
+                <span class="portfolio-pages__tale-title">Marketing</span>
               </div>
             </li>
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/project-boxes.jpg"
+                  src="images/project-boxes-desk@1.jpg"
                   alt="podpisane pudełka"
-                  width="370"
-                  height="294"
+                  srcset="
+                    images/project-boxes-desk@1.jpg   370w,
+                    images/project-boxes-desk@2.jpg   740w,
+                    images/project-boxes-tab@1.jpg    354w,
+                    images/project-boxes-tab@2.jpg    708w,
+                    images/project-boxes-mobile@1.jpg 450w,
+                    images/project-boxes-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -215,17 +262,26 @@
                 </div>
               </div>
               <div class="portfolio-pages__tale">
-                <span><b>Projekt Boxes</b></span>
-                <span>Aplikacja</span>
+                <span class="portfolio-pages__tale-title"
+                  ><b>Projekt Boxes</b></span
+                >
+                <span class="portfolio-pages__tale-title">Aplikacja</span>
               </div>
             </li>
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/boards.jpg"
                   alt="ekran monitora z aplikacją"
-                  width="370"
-                  height="294"
+                  src="images/boards-desk@1.jpg"
+                  srcset="
+                    images/boards-desk@1.jpg   370w,
+                    images/boards-desk@2.jpg   740w,
+                    images/boards-tab@1.jpg    354w,
+                    images/boards-tab@2.jpg    708w,
+                    images/boards-mobile@1.jpg 450w,
+                    images/boards-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -237,19 +293,28 @@
                 </div>
               </div>
               <div class="portfolio-pages__tale">
-                <span><b>Inspiration has no Borders</b></span>
-                <span>Strona internetowa</span>
+                <span class="portfolio-pages__tale-title"
+                  ><b>Inspiration has no Borders</b></span
+                >
+                <span class="portfolio-pages__tale-title"
+                  >Strona internetowa</span
+                >
               </div>
             </li>
-          </ul>
-          <ul class="portfolio-pages__list portfolio-pages__third-row">
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/magazines.jpg"
                   alt="magazyn otwarty na losowej stronie"
-                  width="370"
-                  height="294"
+                  src="images/magazines-desk@1.jpg"
+                  srcset="
+                    images/magazines-desk@1.jpg   370w,
+                    images/magazines-desk@2.jpg   740w,
+                    images/magazines-tab@1.jpg    354w,
+                    images/magazines-tab@2.jpg    708w,
+                    images/magazines-mobile@1.jpg 450w,
+                    images/magazines-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -261,17 +326,26 @@
                 </div>
               </div>
               <div class="portfolio-pages__tale">
-                <span><b>Magazyn Limited Edition</b></span>
-                <span>Dizajn</span>
+                <span class="portfolio-pages__tale-title"
+                  ><b>Magazyn Limited Edition</b></span
+                >
+                <span class="portfolio-pages__tale-title">Dizajn</span>
               </div>
             </li>
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/lab.jpg"
                   alt="etykieta lab"
-                  width="370"
-                  height="294"
+                  src="images/lab-desk@1.jpg"
+                  srcset="
+                    images/lab-desk@1.jpg   370w,
+                    images/lab-desk@2.jpg   740w,
+                    images/lab-tab@1.jpg    354w,
+                    images/lab-tab@2.jpg    708w,
+                    images/lab-mobile@1.jpg 450w,
+                    images/lab-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -283,17 +357,26 @@
                 </div>
               </div>
               <div class="portfolio-pages__tale">
-                <span><b>Projekt LAB</b></span>
-                <span>Marketing</span>
+                <span class="portfolio-pages__tale-title"
+                  ><b>Projekt LAB</b></span
+                >
+                <span class="portfolio-pages__tale-title">Marketing</span>
               </div>
             </li>
             <li class="portfolio-pages__item">
               <div class="portfolio-pages__roll-box">
                 <img
-                  src="images/business.jpg"
                   alt="osoba pracująca na laptopie"
-                  width="370"
-                  height="294"
+                  src="images/business-desk@1.jpg"
+                  srcset="
+                    images/business-desk@1.jpg   370w,
+                    images/business-desk@2.jpg   740w,
+                    images/business-tab@1.jpg    354w,
+                    images/business-tab@2.jpg    708w,
+                    images/business-mobile@1.jpg 450w,
+                    images/business-mobile@2.jpg 900w
+                  "
+                  sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
                 />
                 <div class="portfolio-pages__roll-text">
                   <p class="portfolio-pages__text">
@@ -305,8 +388,10 @@
                 </div>
               </div>
               <div class="portfolio-pages__tale">
-                <span><b>Growing Business</b></span>
-                <span>Aplikacja</span>
+                <span class="portfolio-pages__tale-title"
+                  ><b>Growing Business</b></span
+                >
+                <span class="portfolio-pages__tale-title">Aplikacja</span>
               </div>
             </li>
           </ul>
@@ -384,5 +469,72 @@
         </form>
       </div>
     </footer>
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg class="menu__toggle-icon" width="16px" height="16px">
+          <use href="images/icons.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="menu__modal">
+        <ul class="menu__nav">
+          <li>
+            <a href="index.html" class="menu__link">Agencja</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="menu__link menu__link--active"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="tutorial.html" class="menu__link">Kontakt</a>
+          </li>
+        </ul>
+        <div class="menu__contact">
+          <a
+            href="tel:+48111111111"
+            class="menu__contact-link menu__contact-link--lightblue"
+          >
+            +48 111 111 111
+          </a>
+          <a
+            href="mailto:info@devstudio.com"
+            class="menu__contact-link menu__contact-link--grey"
+          >
+            info@devstudio.com
+          </a>
+          <ul class="menu__social">
+            <li>
+              <a class="menu__social-link" href="https://www.instagram.com"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a class="menu__social-link" href="https://www.twitter.com"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a class="menu__social-link" href="https://www.facebook.com"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                class="menu__social-link--border-none"
+                href="https://www.linkedin.com"
+                >Linkedln</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
